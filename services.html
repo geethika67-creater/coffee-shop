@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu & Services | The Daily Grind</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root { --coffee-dark: #3E2723; --coffee-accent: #795548; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: #fafafa; }
+        .bg-coffee-dark { background-color: var(--coffee-dark) !important; }
+        .text-coffee-dark { color: var(--coffee-dark) !important; }
+        .btn-coffee { background-color: var(--coffee-accent); color: white; }
+        .btn-coffee:hover { background-color: var(--coffee-dark); color: white; }
+        .page-banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            padding: 80px 0;
+            color: white;
+        }
+        .menu-card img { height: 200px; object-fit: cover; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-coffee-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><i class="fas fa-coffee me-2"></i>The Daily Grind</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Menu & Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-banner text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Our Services</h1>
+            <p class="lead">Explore 10 curated beverage configurations, pastry classes, and venue spaces.</p>
+        </div>
+    </header>
+
+    <section class="py-5 container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-coffee-dark">The Core Coffee & Culinary Menu</h2>
+            <p class="text-muted">Every item is crafted with premium ingredients and unparalleled attention to detail.</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 menu-card border-0 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1510972527409-cac236c51112?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Espresso Shot">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="fw-bold text-coffee-dark mb-0">Signature Espresso</h5>
+                            <span class="badge bg-warning text-dark fw-bold">$3.50</span>
+                        </div>
+                        <p class="small text-muted mb-0">Concentrated double shot of dark chocolate espresso featuring sweet-toned crema layers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 menu-card border-0 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1571115177098-24ec420935d5?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Cappuccino">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="fw-bold text-coffee-dark mb-0">Classic Cappuccino</h5>
+                            <span class="badge bg-warning text-dark fw-bold">$4.50</span>
+                        </div>
+                        <p class="small text-muted mb-0">Balanced formulation of espresso, silky steamed dairy milk, and high-volume dense foam pillows.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 menu-card border-0 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Nitro Cold Brew">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="fw-bold text-coffee-dark mb-0">Nitro Cold Brew</h5>
+                            <span class="badge bg-warning text-dark fw-bold">$5.50</span>
+                        </div>
+                        <p class="small text-muted mb-0">Signature cold brew infused thoroughly with nitrogen to yield a creamy, Guinness-like mouthfeel.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 menu-card border-0 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1545665277-5937489579f2?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="V60 Pour Over">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="fw-bold text-coffee-dark mb-0">V60 Pour Over</h5>
+                            <span class="badge bg-warning text-dark fw-bold">$5.00</span>
+                        </div>
+                        <p class="small text-muted mb-0">Hand-filtered precision brew highlighting clean, bright floral flavor profiles.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 menu-card border-0 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Matcha Latte">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="fw-bold text-coffee-dark mb-0">Ceremonial Matcha</h5>
+                            <span class="badge bg-warning text-dark fw-bold">$5.25</span>
+                        </div>
+                        <p class="small text-muted mb-0">Authentic Japanese stone-ground matcha whisked into rich organic milk bases.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 menu-card border-0 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Croissants">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="fw-bold text-coffee-dark mb-0">Almond Croissant</h5>
+                            <span class="badge bg-warning text-dark fw-bold">$4.00</span>
+                        </div>
+                        <p class="small text-muted mb-0">Flaky laminated butter dough packed with sweet frangipane cream filling.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 menu-card border-0 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1603046891744-1f76eb10aec1?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Avocado Toast">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="fw-bold text-coffee-dark mb-0">Artisan Avo Toast</h5>
+                            <span class="badge bg-warning text-dark fw-bold">$9.50</span>
+                        </div>
+                        <p class="small text-muted mb-0">Crushed Haas avocados on toasted sourdough, sprinkled with chili flakes and microgreens.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 menu-card border-0 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1607687325272-327995861111?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Whole Beans">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="fw-bold text-coffee-dark mb-0">Whole Bean Bags</h5>
+                            <span class="badge bg-warning text-dark fw-bold">$16.00</span>
+                        </div>
+                        <p class="small text-muted mb-0">Take the experience home with a 250g bag of our single-origin house roasted beans.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 menu-card border-0 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1464356816481-9399888bf410?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Roasting Class">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="fw-bold text-coffee-dark mb-0">Roasting Workshops</h5>
+                            <span class="badge bg-warning text-dark fw-bold">$45.00</span>
+                        </div>
+                        <p class="small text-muted mb-0">A 2-hour interactive group seminar introducing roasting physics and basic sensory evaluation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mx-auto">
+                <div class="card h-100 menu-card border-0 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Event Venue">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="fw-bold text-coffee-dark mb-0">Cafe Space Rental</h5>
+                            <span class="badge bg-warning text-dark fw-bold">$120/hr</span>
+                        </div>
+                        <p class="small text-muted mb-0">Reserve our beautifully lit main lounge for private evening events, mixers, or book clubs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-coffee-dark">Coffee Subscription Bundles</h2>
+                <p class="text-muted">Save significantly on premium daily extractions through custom tiered cards</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card p-4 border-0 shadow-sm text-center h-100">
+                        <h4 class="fw-bold">Starter Sip</h4>
+                        <h2 class="text-coffee-dark fw-bold my-3">$29<span class="fs-6 text-muted">/mo</span></h2>
+                        <ul class="list-unstyled mb-4 small text-muted">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>10 Espresso Drinks Monthly</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>10% Off Roasted Bean Bags</li>
+                            <li class="text-decoration-line-through"><i class="fas fa-times text-danger me-2"></i>Free Roasting Seminar Access</li>
+                        </ul>
+                        <button class="btn btn-outline-dark mt-auto">Subscribe Now</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 border-0 shadow bg-coffee-dark text-white text-center h-100">
+                        <h4 class="fw-bold text-warning">Daily Devotee</h4>
+                        <h2 class="text-warning fw-bold my-3">$69<span class="fs-6 text-light">/mo</span></h2>
+                        <ul class="list-unstyled mb-4 small text-light">
+                            <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>Unlimited Classic Espresso/Drips</li>
+                            <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>15% Off All In-Store Bakery Items</li>
+                            <li class="mb-2"><i class="fas fa-check text-warning me-2"></i>1 Complimentary Roasting Ticket</li>
+                        </ul>
+                        <button class="btn btn-warning text-dark fw-bold mt-auto">Subscribe Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-coffee-dark text-white pt-5 pb-3">
+        <div class="container text-center text-md-start">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-warning mb-3"><i class="fas fa-coffee me-2"></i>The Daily Grind</h5>
+                    <p class="small text-white-50">Crafting exceptional artisanal experiences day in and day out with organically harvested, sustainably imported farm beans.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-warning mb-3">Quick Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none small d-block mb-2">Home</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none small d-block mb-2">About Us</a></li>
+                        <li><a href="services.html" class="text-white text-decoration-none small d-block mb-2">Menu & Services</a></li>
+                        <li><a href="gallery.html" class="text-white text-decoration-none small d-block mb-2">Gallery</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none small d-block mb-2">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-warning mb-3">Connect With Us</h5>
+                    <div class="d-flex gap-3 fs-4 mb-3 justify-content-center justify-content-md-start">
+                        <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p class="small text-white-50"><i class="fas fa-envelope me-2"></i>hello@thedailygrind.com</p>
+                </div>
+            </div>
+            <hr class="bg-light my-4">
+            <p class="text-center small text-white-50 mb-0">&copy; 2026 The Daily Grind Coffee Shop. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Grind | Premium Coffee Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --coffee-dark: #3E2723;
+            --coffee-light: #D7CCC8;
+            --coffee-accent: #795548;
+            --coffee-cream: #FFF8E1;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fafafa; }
+        .bg-coffee-dark { background-color: var(--coffee-dark) !important; }
+        .text-coffee-dark { color: var(--coffee-dark) !important; }
+        .btn-coffee { background-color: var(--coffee-accent); color: white; border: none; transition: 0.3s; }
+        .btn-coffee:hover { background-color: var(--coffee-dark); color: white; }
+        .hero-banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            padding: 120px 0;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-coffee-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><i class="fas fa-coffee me-2"></i>The Daily Grind</a>
+            <button class="navbar-collapse-trigger navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Menu & Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-banner text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">Welcome to Our Company</h1>
+            <p class="lead mb-4">Crafting moments, one exquisite cup of fresh coffee at a time.</p>
+            <a href="services.html" class="btn btn-coffee btn-lg px-4 me-2">Explore Menu</a>
+            <a href="contact.html" class="btn btn-outline-light btn-lg px-4">Book a Table</a>
+        </div>
+    </header>
+
+    <section class="py-5 container">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="About Our Shop" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <h2 class="fw-bold text-coffee-dark mb-3">Your Everyday Neighborhood Coffee Haven</h2>
+                <p class="text-muted">Founded with a simple vision, The Daily Grind brings universally sourced premium beans right to your neighborhood. We believe coffee brewing is an elegant art form that unites people, inspires fresh ideas, and transforms standard routines into delightful experiences.</p>
+                <p class="text-muted">Step inside to experience artisan roasting workflows, calming atmospheres, and aromas that guarantee an exquisite escape from your busy schedules.</p>
+                <a href="about.html" class="btn btn-coffee">Read Our Full Story</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold text-coffee-dark mb-5">Our House Favorites</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Artisan Latte">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-coffee-dark">Artisan Cafe Latte</h5>
+                            <p class="card-text text-muted">Freshly pulled espresso layers crowned with velvety textured microfoam and custom hand-poured latte designs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Cold Brew">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-coffee-dark">24-Hour Cold Brew</h5>
+                            <p class="card-text text-muted">Steeped perfectly over 24 hours to yield an incredibly smooth profile featuring rich chocolate undertones.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1600431521340-491eca880813?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Fresh Pastries">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-coffee-dark">Gourmet Pastries</h5>
+                            <p class="card-text text-muted">Flaky, buttery French pastries baked fresh from scratch daily by local master bakers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 container text-center">
+        <h2 class="fw-bold text-coffee-dark mb-5">What Our Guests Say</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner bg-coffee-dark text-white p-5 rounded-4 shadow">
+                <div class="carousel-item active">
+                    <p class="lead italic">"The Daily Grind is my undisputed remote working sanctuary! Their cold brews are phenomenal and unmatched across the entire city."</p>
+                    <h5 class="fw-bold mt-3 text-warning">- Sarah Jenkins</h5>
+                </div>
+                <div class="carousel-item">
+                    <p class="lead italic">"A stellar atmosphere paired with incredibly warm baristas. Their pour-overs transform ordinary weekend mornings into perfection."</p>
+                    <h5 class="fw-bold mt-3 text-warning">- David Miller</h5>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <section class="py-5 bg-warning text-dark text-center fw-semibold">
+        <div class="container">
+            <h3 class="fw-bold mb-3">Craving a Perfect Cup of Liquid Gold?</h3>
+            <p class="mb-4">Skip long queues and maximize your breaks by ordering ahead for instantaneous premium pickup!</p>
+            <a href="contact.html" class="btn btn-dark btn-lg px-5 shadow-sm">Order Online Now</a>
+        </div>
+    </section>
+
+    <footer class="bg-coffee-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-warning mb-3"><i class="fas fa-coffee me-2"></i>The Daily Grind</h5>
+                    <p class="small text-light-50">Crafting exceptional artisanal experiences day in and day out with organically harvested, sustainably imported farm beans.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-warning mb-3">Quick Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none small d-block mb-2">Home</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none small d-block mb-2">About Us</a></li>
+                        <li><a href="services.html" class="text-white text-decoration-none small d-block mb-2">Menu & Services</a></li>
+                        <li><a href="gallery.html" class="text-white text-decoration-none small d-block mb-2">Gallery</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none small d-block mb-2">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-warning mb-3">Connect With Us</h5>
+                    <div class="d-flex gap-3 fs-4 mb-3">
+                        <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p class="small text-white-50"><i class="fas fa-envelope me-2"></i>hello@thedailygrind.com</p>
+                </div>
+            </div>
+            <hr class="bg-light my-4">
+            <p class="text-center small text-white-50 mb-0">&copy; 2026 The Daily Grind Coffee Shop. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

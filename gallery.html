@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | The Daily Grind</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root { --coffee-dark: #3E2723; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: #fafafa; }
+        .bg-coffee-dark { background-color: var(--coffee-dark) !important; }
+        .text-coffee-dark { color: var(--coffee-dark) !important; }
+        .page-banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            padding: 80px 0;
+            color: white;
+        }
+        .gallery-img { height: 260px; object-fit: cover; transition: transform 0.3s ease; border-radius: 8px; }
+        .gallery-img:hover { transform: scale(1.04); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-coffee-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><i class="fas fa-coffee me-2"></i>The Daily Grind</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Menu & Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-banner text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Gallery</h1>
+            <p class="lead">A visual journey through cozy extraction moments and fresh bakes.</p>
+        </div>
+    </header>
+
+    <section class="py-5 container">
+        <div class="row g-4">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=500&q=80" alt="Cafe Scene" class="img-fluid gallery-img shadow-sm w-100">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=500&q=80" alt="Latte Pouring" class="img-fluid gallery-img shadow-sm w-100">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" alt="Cold Brew Pour" class="img-fluid gallery-img shadow-sm w-100">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://images.unsplash.com/photo-1600431521340-491eca880813?auto=format&fit=crop&w=500&q=80" alt="Fresh Pastry" class="img-fluid gallery-img shadow-sm w-100">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=500&q=80" alt="Espresso Bar" class="img-fluid gallery-img shadow-sm w-100">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=500&q=80" alt="Coffee Table" class="img-fluid gallery-img shadow-sm w-100">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=500&q=80" alt="Roasting Beans" class="img-fluid gallery-img shadow-sm w-100">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=500&q=80" alt="Drinking Coffee" class="img-fluid gallery-img shadow-sm w-100">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&w=500&q=80" alt="Chemex Brew" class="img-fluid gallery-img shadow-sm w-100">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=500&q=80" alt="Cafe Seating" class="img-fluid gallery-img shadow-sm w-100">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=500&q=80" alt="Working Room" class="img-fluid gallery-img shadow-sm w-100">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://images.unsplash.com/photo-1515442261305-65c0e8f530d5?auto=format&fit=crop&w=500&q=80" alt="Beans Close Up" class="img-fluid gallery-img shadow-sm w-100">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=500&q=80" alt="Coffee Interior" class="img-fluid gallery-img shadow-sm w-100">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://images.unsplash.com/photo-1524350309062-27854d9b0613?auto=format&fit=crop&w=500&q=80" alt="Pouring Milk" class="img-fluid gallery-img shadow-sm w-100">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=500&q=80" alt="Coffee Counter" class="img-fluid gallery-img shadow-sm w-100">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=500&q=80" alt="Mug Art" class="img-fluid gallery-img shadow-sm w-100">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-coffee-dark text-white pt-5 pb-3">
+        <div class="container text-center text-md-start">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-warning mb-3"><i class="fas fa-coffee me-2"></i>The Daily Grind</h5>
+                    <p class="small text-white-50">Crafting exceptional artisanal experiences day in and day out with organically harvested, sustainably imported farm beans.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-warning mb-3">Quick Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none small d-block mb-2">Home</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none small d-block mb-2">About Us</a></li>
+                        <li><a href="services.html" class="text-white text-decoration-none small d-block mb-2">Menu & Services</a></li>
+                        <li><a href="gallery.html" class="text-white text-decoration-none small d-block mb-2">Gallery</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none small d-block mb-2">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-warning mb-3">Connect With Us</h5>
+                    <div class="d-flex gap-3 fs-4 mb-3 justify-content-center justify-content-md-start">
+                        <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p class="small text-white-50"><i class="fas fa-envelope me-2"></i>hello@thedailygrind.com</p>
+                </div>
+            </div>
+            <hr class="bg-light my-4">
+            <p class="text-center small text-white-50 mb-0">&copy; 2026 The Daily Grind Coffee Shop. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
